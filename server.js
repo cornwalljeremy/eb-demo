@@ -5,7 +5,11 @@ const { PORT = 3000 } = process.env;
 console.log('PORT', PORT);
 
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.send('Hola Mundo')
+});
+
+app.get('/users', (req, res) => {
+  res.send('Hello Users')
 });
 
 app.listen(PORT, () => {
